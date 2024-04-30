@@ -32,4 +32,7 @@ Accessibility Features: The platform includes accessibility features such as scr
 13.Integration Capabilities: Integration with learning management systems (LMS) or other educational platforms, enabling seamless sharing and management of quizzes within existing workflows.
 
 
+![sql mapping]()
+
+
 
