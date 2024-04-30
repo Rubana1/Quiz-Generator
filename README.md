@@ -1,7 +1,7 @@
 ## Quiz-Generator
 A quiz generator is a software tool or application designed to create quizzes or assessments for various purposes, such as education, training, entertainment, or evaluation. These generators typically allow users to input questions, multiple-choice options, and correct answers, and then automatically generate quizzes based on the provided parameters.
 
-##Features:
+## Features:
 1.Quiz Creation: Users can create quizzes by specifying the quiz title, description, and adding questions with various types such as multiple choice, true/false, or short answer.
 2.Question Bank: A repository where users can store and manage questions, enabling easy access for quiz creation.
 3.Customizable Question Types: Users can choose from different question types including multiple choice, true/false, short answer, and more, allowing for diverse and engaging quizzes.
