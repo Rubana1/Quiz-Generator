@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module quiz_generator {
-}
