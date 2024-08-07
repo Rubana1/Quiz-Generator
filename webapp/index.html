@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Generator</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensure body covers entire viewport height */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-container h2 {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049; /* Darker Green */
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Generator</h1>
+    
+    <div class="form-container">
+        <form action="createQuiz" method="post">
+            <h2>Create Quiz</h2>
+            Title: <input type="text" name="title"><br>
+            Description: <input type="text" name="description"><br>
+            <input type="submit" value="Create Quiz">
+        </form>
+    </div>
+    
+    <div class="form-container">
+        <form action="addQuestion" method="post">
+            <h2>Add Question</h2>
+            Quiz ID: <input type="number" name="quizId"><br>
+            Question Text: <input type="text" name="text"><br>
+            Correct Answer: <input type="text" name="correctAnswer"><br>
+            Options (comma-separated): <input type="text" name="options"><br>
+            <input type="submit" value="Add Question">
+        </form>
+    </div>
+    
+    <div class="form-container">
+        <form action="getQuiz" method="get">
+            <h2>Get Quiz</h2>
+            Quiz ID: <input type="number" name="quizId"><br>
+            <input type="submit" value="Get Quiz">
+        </form>
+    </div>
+    
+    
+</body>
+</html>
